@@ -1,0 +1,25 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class Potencia {
+    public static void main(String[] args) {
+        double Base=0;
+        int Potencia=0;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese la base: ");
+        Base=sc.nextDouble();
+        System.out.print("Ingrese la potencia: ");
+        Potencia=sc.nextInt();
+        if(Potencia>0){
+        System.out.print(Potencia(Base,Potencia));
+        }
+        else{
+          System.out.print("Ingrese una potencia postiva");
+        }
+    }
+    public static double Potencia(double Base, int Potencia){
+      double resultado = 0;
+      resultado = Math.pow(Base,Potencia);
+      return resultado;
+    }
+}
