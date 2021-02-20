@@ -1,0 +1,29 @@
+package javaapplication1;
+class JavaApplication1{ 
+      
+    static int Tribonacci(int n) 
+    { 
+          
+        if (n == 0 || n == 1 || n == 2) 
+            return 0; 
+              
+        if (n == 3) 
+            return 1; 
+        else
+            return Tribonacci(n - 1) +  
+                   Tribonacci(n - 2) + 
+                   Tribonacci(n - 3); 
+    } 
+      
+    static void Tribo(int n) 
+    { 
+        for (int i = 1; i < n; i++) 
+            System.out.print(Tribonacci(i) + " "); 
+    } 
+      
+    public static void main(String args[]) 
+    { 
+        int n = 5; 
+        Tribo(n); 
+    } 
+} 
